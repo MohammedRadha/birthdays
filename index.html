@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+ <head>
+	<title>Cousin's birthday</title>
+ </head>
+ <body>
+	<h1> Welcome to the Cool Cousin birthday Website </h1>
+	<p>Enter the cousins name here and click the button to get their birthday date. Only capitalize the first letter.</p>
+	<p id="name"></p>
+	<p id ="par2"></p>
+	<input type="text" id="userinput">
+	<button onclick="F('userinput')"> click to check</button>
+	<script>
+		
+		
+		
+		function F(s){
+		
+			var namelist =     [ "Hama" , "Mustafa" , "Yahya" , "Shna" , "Przha" , "Prusha" , "Hanar" , "Ali" , "Tarza" , "Lana" , "Balar" , "Barin" , "Baran" , "HamaSaeed" , "Elyaas" , "Bafreen" , "MustafaNZ" , "Ahmed" ]
+			var birthdaylist = [ "May 4th 2001" , "January 18th 1998" , "February 22nd 2005" , "September 5th 2002" , "March 3rd 1996" , "May 31st 1997" , "September 14th 2000" , "February 12th 2002" , "June 18th 2002" , "March 22nd 2004" , "December 10th 2007" , "May 13th 2009" , "March 20th 2018" , "May 4th 2008" , "October 21st 2015" , "August 29th 1991" , "July 10th 1996" , "January 5th 1998"]
+			
+			var name1 = document.getElementById(s).value; 
+			document.getElementById("name").innerHTML= name1;
+			I = namelist.indexOf(name1);
+			
+			
+			document.getElementById("par2").innerHTML = birthdaylist[I];
+		}
+		
+		
+	
+	</script>
+	
+	<p> For Mustafa Shareef please enter MustafaNZ, for Hama Saeed please enter HamaSaeed.</p>
+	
+	<p> This website is still in version one, I will continously work on it to improve it. Thank you for paying a visit.</p>
+	<p> Special thanks to Shna for providing the birthdays</p>
+	<p> If you have any suggestions or requests please contact the admin. psst the admin is Hama.</p>
+</body>
+</html>
